@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a14430386d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Exercícios</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Exercícios</h1>
+      <h2 class="page-subtitle">Algoritmos e Lógica de Programação</h2>
+    </header>
+    <main>
+      <div class="grid-button">
+        <button id="limpar" onclick="limparTudo()">
+          <i class="fa-solid fa-broom"></i>
+        </button>
+      </div>
+      <div class="projeto">
+        <h3>Subtração</h3>
+        <div class="grid-container">
+          <input type="text" id="valor_subtracao_1" />
+          <input type="text" id="valor_subtracao_2" />
+        </div>
+        <button id="subtrair" onclick="subtrair()">Calcular</button>
+        <p class="resultado" id="subtracao"></p>
+      </div>
+      <hr />
+
+      <div class="projeto">
+        <h3>Média Aritmética</h3>
+        <div class="grid-container">
+          <input type="text" id="nota_1" />
+          <input type="text" id="nota_2" />
+        </div>
+        <button type="submit" onclick="media()">Calcular</button>
+        <p class="resultado" id="media"></p>
+        <p id="situacao"></p>
+      </div>
+      <hr />
+
+      <div class="projeto">
+        <h3>Divisão</h3>
+        <div class="grid-container">
+          <input type="text" id="valor_divisao_1" />
+          <input type="text" id="valor_divisao_2" />
+        </div>
+        <button onclick="dividir()" type="submit">Calcular</button>
+        <p class="resultado" id="divisao"></p>
+      </div>
+      <hr />
+
+      <div class="projeto">
+        <h3>Novo Salário</h3>
+        <p class="description">
+          Caso o salário seja menor ou igual a R$500, o funcionário receberá 20%
+          de aumento, senão, apenas receberá 10%
+        </p>
+        <input type="text" id="salario_atual" />
+        <button onclick="salario()" type="submit">Calcular</button>
+        <p class="resultado" id="salario_novo"></p>
+      </div>
+      <hr />
+
+      <div class="projeto">
+        <h3>Receber dois valores e mostrá-los invertidos</h3>
+        <p class="description">
+          Faça um algoritmo para receber dois valores (A e B) e mostrar os
+          valores invertidos, ou seja, o valor de A em B e o valor de B em A.
+        </p>
+        <div class="grid-container">
+          <input placeholder="Valor A" type="text" id="valor1" />
+          <input placeholder="Valor B" type="text" id="valor2" />
+        </div>
+        <button onclick="inverter()" type="submit">Mostrar os valores</button>
+        <p class="resultado" id="resultado"></p>
+      </div>
+    </main>
+    <footer>
+      <a
+        href="https://www.flaticon.com/free-icons/creativity"
+        title="creativity icons"
+        target="_blank"
+        >Creativity icons created by Freepik - Flaticon</a
+      >
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

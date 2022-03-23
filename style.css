@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Kumbh+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.projeto {
+  padding: 1.7em;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+#salario_atual {
+  justify-self: center;
+}
+
+header {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  color: #000;
+  text-align: center;
+  padding: 1em;
+}
+
+.grid-button {
+  display: grid;
+}
+
+#limpar {
+  padding: 0.6em 2em;
+  justify-self: end;
+  margin: 1em 1em 0 0;
+}
+
+footer {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  color: #000;
+  padding: 1.5em;
+}
+
+input {
+  outline: none;
+  padding: 0.4em;
+  border-radius: 30px;
+  border: none;
+  margin: 0.4em;
+  font-size: 1em;
+  transition: 0.2s linear;
+}
+
+input:focus {
+  background-color: #ffee82;
+}
+
+h3 {
+  margin-bottom: 0.8em;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+button {
+  border-radius: 30px;
+  padding: 0.5em 0.8em;
+  outline: none;
+  border: solid 0.2em #fff;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.2s linear;
+  color: #fff;
+  justify-self: center;
+  margin-top: 1.4em;
+}
+
+button:hover {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+  color: #000;
+  border: solid 0.2em #000;
+}
+
+button:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.resultado,
+#situacao {
+  margin: 1em;
+}
+
+.description {
+  color: #c8c8c8;
+  font-style: italic;
+  margin-bottom: 0.7em;
+  font-size: 0.9em;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(34, 34, 34);
+}
+
+a[href^="http"]::after {
+  font-family: "Font Awesome 6 Free";
+  content: " \f35d";
+  font-weight: 900;
+  font-size: 0.7em;
+}
