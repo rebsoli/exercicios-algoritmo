@@ -15,7 +15,7 @@ function limparTudo() {
 }
 
 function alert() {
-  swal("Opa!", "Você não preencheu todos os campos", "warning");
+  swal.fire("Opa!", "Você não preencheu todos os campos", "warning");
 }
 
 function subtrair() {
@@ -47,7 +47,7 @@ function media() {
   ) {
     alert();
   } else if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
-    swal(
+    swal.fire(
       "Erro!",
       "O valor digitado é inválido, só são aceitos valores entre 0 e 10",
       "error"
@@ -83,7 +83,7 @@ function dividir() {
     limpar("valor_divisao_2");
   } else {
     if (valor2 == 0) {
-      swal(
+      swal.fire(
         "Erro!",
         "Não é possível dividir um número por 0, tente novamente",
         "error"
@@ -104,7 +104,7 @@ function salario() {
   let resultado = document.querySelector("#salario_novo");
 
   if (document.getElementById("salario_atual").value == "") {
-    swal("Opa!", "Você não preencheu este campo", "warning");
+    swal.fire("Opa!", "Você não preencheu este campo", "warning");
   } else {
     if (salarioAtual <= 500) {
       resultado.innerHTML = `Seu novo salario é: R$ ${(
